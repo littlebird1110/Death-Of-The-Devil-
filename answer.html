@@ -13,14 +13,14 @@
 
 <script>
 function checkAnswer() {
-    const correctAnswer = "elizabeth"; 
+    const correctAnswer = "benedict"; 
     const userResponse = document.getElementById("userInput").value.trim().toLowerCase();
     const feedback = document.getElementById("feedback");
     const gif = document.getElementById("successGif");
 
     if (userResponse === correctAnswer) {
-        feedback.innerHTML = "Correct! <b>Elizabeth</b> murdered Able";
-        feedback.style.color = "green";
+        feedback.innerHTML = "Correct! <b>Benedict</b> murdered Able LeDomas";
+        feedback.style.color = "#481F1D";
         gif.style.display = "block";
 
         setTimeout(() => {
@@ -29,7 +29,7 @@ function checkAnswer() {
 
     } else {
         feedback.innerHTML = "Incorrect. Please Try Again";
-        feedback.style.color = "red";
+        feedback.style.color = "#481F1D";
         gif.style.display = "none";
     }
 }
