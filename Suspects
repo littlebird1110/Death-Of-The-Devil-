@@ -25,3 +25,9 @@
     width: 5%;
     height: 8%;
   }
+</style>
+</head>
+
+<div id="art-canvas">
+  <!-- Invisible clickable areas -->
+  <div id="clue-police-file" class="hotspot" onclick="showClue('police file')"></div>
