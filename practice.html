@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Death of The Devil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #481F1D;
+            display: flex;
+            justify-content: center; /* Centers the game horizontally */
+            align-items: center;     /* Centers the game vertically */
+            min-height: 100vh;
+        }
+
+        /* THE FIX: This container locks the proportions */
+        #game-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1920px; /* Adjust to your image's actual width */
+            aspect-ratio: 16 / 9; /* CRITICAL: Change this to match your image's ratio */
+            background-image: url('images/Home_Screen.jpg');
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
