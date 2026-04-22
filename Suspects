@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <style>
+      body {
+      background-image: url('images/Home_Screen.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      margin: 0 auto;
+    }
+
+  /* The transparent "Hotspot" */
+  .hotspot {
+    position: absolute;
+    cursor: pointer;
+    /* Use background: rgba(255, 0, 0, 0.3); to see them while testing!, transparent when ready */
+    background: rgba(255,0,0,0.3); 
+  }
+
+  /* Position each clue area specifically */
+  #clue-police-file {
+    top: 86%;
+    left: 48%;
+    width: 5%;
+    height: 8%;
+  }
