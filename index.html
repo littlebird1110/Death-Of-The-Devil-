@@ -7,8 +7,10 @@
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
+      margin: 0 auto;
     }
-     /* The transparent "Hotspot" */
+
+  /* The transparent "Hotspot" */
   .hotspot {
     position: absolute;
     cursor: pointer;
@@ -17,23 +19,25 @@
   }
 
   /* Position each clue area specifically */
-  #clue-police-file {
+  #clue-beaver {
     top: 45%;
     left: 22%;
     width: 10%;
     height: 15%;
   }
 
-  #clue-signet-ring {
+  #clue-secret-door {
     top: 10%;
     left: 80%;
     width: 5%;
     height: 20%;
   }
+</style>
+</head>
 
 <div id="art-canvas">
   <!-- Invisible clickable areas -->
-<div id="clue-beaver" class="hotspot" onclick="showClue('You see a door... looks old.')"></div>
+  <div id="clue-beaver" class="hotspot" onclick="showClue('You see a door... looks old.')"></div>
   <div id="clue-secret-door" class="hotspot" onclick="showClue('A faint clicking sound comes from the wall...')"></div>
 </div>
 
@@ -42,6 +46,5 @@
     alert(message);
   }
 </script>
-  </style>
-<head>
+
 </html>
